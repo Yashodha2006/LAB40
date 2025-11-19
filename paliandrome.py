@@ -1,18 +1,14 @@
 import sys
 
-if len(sys.argv) >= 4:
-    p = float(sys.argv[1])
-    t = float(sys.argv[2])
-    r = float(sys.argv[3])
-    print("User input provided.")
+if len(sys.argv) == 2:
+    word = sys.argv[1]
+    print("User input provided")
 else:
-    p = 1000
-    t = 2
-    r = 2
+    word = "madam"
 
-si = (p * t * r) / 100
+rev = word[::-1]
 
-print("The Principal is :", p)
-print("The Time is :", t)
-print("The Rate is :", r)
-print("The Simple Interest is :", si)
+if word == rev:
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
