@@ -1,16 +1,16 @@
 import sys
 
 if len(sys.argv) >= 4:
-    p = float(sys.argv[1])
-    t = float(sys.argv[2])
-    r = float(sys.argv[3])
+    principle = float(sys.argv[1])
+    time = float(sys.argv[2])
+    rate = float(sys.argv[3])
     print("User input provided.")
 else:
-    p = 1000
-    t = 2
-    r = 2
+    principle = 1000
+    time = 2
+    rate= 2
 
-si = (p * t * r) / 100
+si = (principle * time * rate) / 100
 
 print("The Principal is :", p)
 print("The Time is :", t)
